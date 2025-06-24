@@ -6,9 +6,7 @@ This project is a **simple banking web application** built using Flask and SQLit
 - Create a bank account
 - Check account balance
 - Deposit and withdraw funds
-- View bank statement (feature placeholder)
-
-The goal is to demonstrate a minimal full-stack application for learning or prototyping.
+- View detailed transaction statements with timestamps
 
 ---
 
@@ -18,7 +16,7 @@ The goal is to demonstrate a minimal full-stack application for learning or prot
 - **Frontend:** HTML (with embedded Flask template rendering)
 - **Database:** SQLite (serverless and easy to use for small-scale apps)
 - **Containerization:** Docker (via included `Dockerfile`)
-- **Other Tools:** Jinja2 for templating, HTTP methods for routing
+  
 
 ---
 
@@ -57,6 +55,16 @@ The goal is to demonstrate a minimal full-stack application for learning or prot
 - Ready for **containerized deployment** with Docker.
 
 ---
+
+## 🐳 Docker Setup
+
+You can run this application inside a Docker container for ease of deployment.
+
+### 📦 Build the Docker image
+```COMMAND PROMPT
+docker build -t banking-app .
+🚀 Run the Docker container
+docker run -d -p 5005:5005 banking-app  
 
 
 
